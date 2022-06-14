@@ -31,8 +31,16 @@ userMap.set(mary, "An object key");
 // console.log(userMap);
 
 // Iterate over the map
-for (let entry of userMap) {
-  console.log(
-    `The key is ${JSON.stringify(entry[0])} and the value is ${entry[1]}`
-  );
-}
+// for (let entry of userMap) {
+//   console.log(
+//     `The key is ${JSON.stringify(entry[0])} and the value is ${entry[1]}`
+//   );
+// }
+
+// Convert the map to an array
+// let mapArray = Array.from(userMap);
+// console.log(mapArray);
+
+// // Convert the map to an object
+// let mapObject = Object.fromEntries(userMap);
+// console.log(mapObject);
