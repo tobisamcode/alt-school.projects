@@ -3,10 +3,16 @@ function displayUserDetails() {
   while (ValidateUsername(username) == false) {
     username = prompt("Username not valid, Please enter a valid username");
   }
+  if (username == null) {
+    return;
+  }
 
   let password = prompt("Enter your password");
   while (ValidatePassword(password) == false) {
     password = prompt("Password is not valid, Plaese enter a valid password");
+  }
+  if (password == null) {
+    return;
   }
 
   console.log(username, password);
