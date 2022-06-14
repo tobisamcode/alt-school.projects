@@ -1,4 +1,5 @@
 function displayUserDetails() {
+  // enter username
   let username = prompt("Enter your username");
   while (ValidateUsername(username) == false) {
     username = prompt("Username not valid, Please enter a valid username");
@@ -6,7 +7,7 @@ function displayUserDetails() {
   if (username == null) {
     return;
   }
-
+  // enter password
   let password = prompt("Enter your password");
   while (ValidatePassword(password) == false) {
     password = prompt("Password is not valid, Plaese enter a valid password");
@@ -15,7 +16,14 @@ function displayUserDetails() {
     return;
   }
 
-  console.log(username, password);
+  // confirm password
+  let passwordConfirm = prompt("Confirm your password");
+  while (ValidatePasswordConfirm(password, passwordConfirm) == false) {
+    passwordConfirm = prompt("incorrectly, password doesn't match");
+    if (passwordConfirm == null) {
+      return;
+    }
+  }
 }
 
 displayUserDetails();
@@ -39,6 +47,17 @@ function ValidatePassword(password) {
   }
 
   if (password.length < 6) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+function ValidatePasswordConfirm(password, passwordConfirm) {
+  if (passwordConfirm == null) {
+    return true;
+  }
+  if (password != passwordConfirm) {
     return false;
   } else {
     return true;
