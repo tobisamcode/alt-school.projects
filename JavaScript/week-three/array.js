@@ -50,4 +50,15 @@ const animals = ["Tiger", "Lion", "pig"];
 // }
 
 // Iterate over the array with forEach
-animals.forEach(animal => console.log(`This animal is: ${animal}`));
+// animals.forEach(animal => console.log(`This animal is: ${animal}`));
+
+// Iterate over the array with Map
+let usernames = ["John", "azeez", "ade", "akin"];
+
+let usernameInUppercase = usernames.map(u => {
+  //do the transformation
+  const transformed = u.toUpperCase();
+  return transformed;
+});
+
+console.log(usernameInUppercase);
