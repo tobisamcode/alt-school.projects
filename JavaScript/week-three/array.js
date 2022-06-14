@@ -5,7 +5,7 @@
 // console.log(user.length);
 
 // create an array
-const animals = ["Tiger", "Lion", "pig"];
+// const animals = ["Tiger", "Lion", "pig"];
 
 // Get values from the array
 // alert(animals[1]);
@@ -36,3 +36,18 @@ const animals = ["Tiger", "Lion", "pig"];
 // const animals = ["Tiger", "Lion", "pig", "Goat", "Hen", "Fish", "Cheetah"];
 
 // console.log(animals.slice(0, 3)); // ['Tiger', 'Lion', 'pig']
+
+const animals = ["Tiger", "Lion", "pig"];
+
+// Iterate over the array with for ... of
+// for (let animal of animals) {
+//   console.log(`This animal is: ${animal}`);
+// }
+
+// Iterate over the array with for ... in
+// for (let index in animals) {
+//   console.log(`The index is ${index} and the value is ${animals[index]}`);
+// }
+
+// Iterate over the array with forEach
+animals.forEach(animal => console.log(`This animal is: ${animal}`));
