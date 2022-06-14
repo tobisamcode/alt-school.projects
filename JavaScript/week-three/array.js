@@ -55,10 +55,10 @@ const animals = ["Tiger", "Lion", "pig"];
 // Iterate over the array with Map
 let usernames = ["John", "azeez", "ade", "akin"];
 
-let usernameInUppercase = usernames.map(u => {
-  //do the transformation
-  const transformed = u.toUpperCase();
-  return transformed;
-});
+// usernames = usernames.map(u => {
+//   //do the transformation
+//   const transformed = u.toUpperCase();
+//   return transformed;
+// });
 
-console.log(usernameInUppercase);
+// console.log(usernames);
