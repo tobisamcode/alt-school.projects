@@ -8,6 +8,7 @@ while (ValidatePassword(password) == false) {
   password = prompt("Password is not valid, Plaese enter a valid password");
 }
 
+console.log(username, password);
 alert("you have come to the end of the programm");
 
 function ValidateUsername(username) {
