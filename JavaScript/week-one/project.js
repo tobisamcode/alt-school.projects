@@ -18,7 +18,7 @@ function displayUserDetails() {
 
   // confirm password
   let passwordConfirm = prompt("Confirm your password");
-  while (ValidatePasswordConfirm(password, passwordConfirm) == false) {
+  while (password != passwordConfirm) {
     passwordConfirm = prompt("incorrectly, password doesn't match");
     if (passwordConfirm == null) {
       return;
@@ -47,17 +47,6 @@ function ValidatePassword(password) {
   }
 
   if (password.length < 6) {
-    return false;
-  } else {
-    return true;
-  }
-}
-
-function ValidatePasswordConfirm(password, passwordConfirm) {
-  if (passwordConfirm == null) {
-    return true;
-  }
-  if (password != passwordConfirm) {
     return false;
   } else {
     return true;
