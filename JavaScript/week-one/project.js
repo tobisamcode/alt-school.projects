@@ -1,3 +1,34 @@
+const usersDB = {
+  tobisam20: {
+    firstName: "Tobi",
+    lastName: "Adesokan",
+    accountActivated: true,
+    email: "samuel@gmail.com",
+    password: "12222@333"
+  },
+  ade234: {
+    firstName: "Ade",
+    lastName: "Okiki",
+    accountActivated: false,
+    email: "oki@gmail.com",
+    password: "ade333"
+  },
+  "chike@3": {
+    firstName: "Chike",
+    lastName: "Chuku",
+    accountActivated: true,
+    email: "chi@gmail.com",
+    password: "chike@333"
+  },
+  ada333: {
+    firstName: "Adaobi",
+    lastName: "Humpson",
+    accountActivated: false,
+    email: "adaobi22@gmail.com",
+    password: "12aeee@333"
+  }
+};
+
 function displayUserDetails() {
   // enter username
   let username = prompt("Enter your username");
@@ -24,6 +55,20 @@ function displayUserDetails() {
       return;
     }
   }
+
+  // check if the user database contains the username
+  const user = usersDB[username];
+  if (user == undefined) {
+    alert("User not found! Please try to register on the app");
+  }
+
+  alert(`
+        User found with the following details:
+        First Name: ${user.firstName}
+        Last Name: ${user.lastName}
+        Email: ${user.email}
+        Account Activated: ${user.accountActivated}
+    `);
 }
 
 displayUserDetails();
@@ -52,34 +97,3 @@ function ValidatePassword(password) {
     return true;
   }
 }
-
-const ussersDB = {
-  tobisam2000: {
-    firstName: "Tobi",
-    lastName: "Adesokan",
-    accountActivated: true,
-    email: "samuel@gmail.com",
-    password: "12222@333"
-  },
-  ade234: {
-    firstName: "Ade",
-    lastName: "Okiki",
-    accountActivated: false,
-    email: "oki@gmail.com",
-    password: "ade@333"
-  },
-  "chike@3": {
-    firstName: "Chike",
-    lastName: "Chuku",
-    accountActivated: true,
-    email: "chi@gmail.com",
-    password: "chike@333"
-  },
-  ada333: {
-    firstName: "Adaobi",
-    lastName: "Humpson",
-    accountActivated: false,
-    email: "adaobi22@gmail.com",
-    password: "12aeee@333"
-  }
-};
