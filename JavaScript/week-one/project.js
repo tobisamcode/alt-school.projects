@@ -52,3 +52,34 @@ function ValidatePassword(password) {
     return true;
   }
 }
+
+const ussersDB = {
+  tobisam2000: {
+    firstName: "Tobi",
+    lastName: "Adesokan",
+    accountActivated: true,
+    email: "samuel@gmail.com",
+    password: "12222@333"
+  },
+  ade234: {
+    firstName: "Ade",
+    lastName: "Okiki",
+    accountActivated: false,
+    email: "oki@gmail.com",
+    password: "ade@333"
+  },
+  "chike@3": {
+    firstName: "Chike",
+    lastName: "Chuku",
+    accountActivated: true,
+    email: "chi@gmail.com",
+    password: "chike@333"
+  },
+  ada333: {
+    firstName: "Adaobi",
+    lastName: "Humpson",
+    accountActivated: false,
+    email: "adaobi22@gmail.com",
+    password: "12aeee@333"
+  }
+};
