@@ -1,6 +1,6 @@
 // Navigating the DOM
 
-// Children: childNodes, firstChild, lastChild
+// Children: childNodes, firstChild, lastChild;
 
 // list all child nodes of the body tag
 console.log(document.body.childNodes); //Note newline characters is a Text node, which is a child of the body tag
@@ -19,7 +19,7 @@ console.log(document.body.hasChildNodes()); // true
 
 // loop through all children of the body tag
 for (let i = 0; i < document.body.childNodes.length; i++) {
-    console.log(document.body.childNodes[i]);
+  console.log(document.body.childNodes[i]);
 }
 
 // Siblings: previousSibling, nextSibling
@@ -29,7 +29,6 @@ console.log("Previous Sibling ", document.body.previousSibling); // null
 
 // get the next sibling of the head tag
 console.log("Next Sibling: ", document.head.nextSibling); // null
-
 
 // Parent: parentNode
 // get the parent of the head tag
