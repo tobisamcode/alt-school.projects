@@ -1,7 +1,7 @@
-// Destructuring an array
-let names = ["Adebayo", "Tobi", "Akin"];
+// // Destructuring an array
+// let names = ["Adebayo", "Tobi", "Akin"];
 
-let [firstName, lastName, middleName] = names;
+// let [firstName, lastName, middleName] = names;
 // console.log(firstName, lastName, middleName);
 
 // Get the first name
@@ -22,7 +22,7 @@ let [firstName, lastName, middleName] = names;
 // console.log(restOfNames); // ['Tobi', 'Akin']
 
 // Destructuring in Objects
-let settings = { theme: "dark", fontSize: 24, fullScreen: true };
+// let settings = { theme: "dark", fontSize: 24, fullScreen: true };
 
 // let { theme, fontSize, fullScreen } = settings;
 // console.log(theme, fontSize, fullScreen);
@@ -32,6 +32,18 @@ let settings = { theme: "dark", fontSize: 24, fullScreen: true };
 // console.log(newTheme);
 
 // Use the rest operator to get the rest of the settings
-let { theme: newTheme1, ...restOfSettings } = settings;
-console.log(newTheme1);
-console.log(restOfSettings);
+// let { theme: newTheme1, ...restOfSettings } = settings;
+// console.log(newTheme1);
+// console.log(restOfSettings);
+
+// Destructuring in a Function
+// function getUserInfo({ name, age }) {
+//   console.log(`My name is ${name} and I am ${age} years old`);
+// }
+
+// const user = {
+//   name: "Tobi",
+//   age: 23
+// };
+
+// getUserInfo(user);
