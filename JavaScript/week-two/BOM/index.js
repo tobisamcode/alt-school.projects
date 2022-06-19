@@ -10,6 +10,7 @@ console.log("origin:", anchor.origin);
 console.log("pathname:", anchor.pathname);
 console.log("port:", anchor.port);
 console.log("protocol:", anchor.protocol);
+console.log("search:", anchor.search);
 
 // //Change location of web page
 // alert(location.href); // shows current URL
