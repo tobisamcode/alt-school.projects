@@ -51,3 +51,7 @@
 //     "You're at: " + position.coords.latitude + ", " + position.coords.longitude
 //   );
 // });
+
+navigator.clipboard
+  .readText()
+  .then(clipText => (document.querySelector(".cliptext").innerText = clipText));
