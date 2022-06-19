@@ -3,6 +3,8 @@
 // location.hash
 var anchor = document.querySelector("a");
 console.log(anchor.hash);
+console.log(anchor.host);
+console.log(anchor.hostname);
 
 // //Change location of web page
 // alert(location.href); // shows current URL
