@@ -1,27 +1,27 @@
 // // Location Object (https://developer.mozilla.org/en-US/docs/Web/API/Window/location)
 
 // location.hash
-var anchor = document.querySelector("a");
-console.log("hash:", anchor.hash);
-console.log("host:", anchor.host);
-console.log("hostname:", anchor.hostname);
-console.log("href:", anchor.href);
-console.log("origin:", anchor.origin);
-console.log("pathname:", anchor.pathname);
-console.log("port:", anchor.port);
-console.log("protocol:", anchor.protocol);
-console.log("search:", anchor.search);
+// var anchor = document.querySelector("a");
+// console.log("hash:", anchor.hash);
+// console.log("host:", anchor.host);
+// console.log("hostname:", anchor.hostname);
+// console.log("href:", anchor.href);
+// console.log("origin:", anchor.origin);
+// console.log("pathname:", anchor.pathname);
+// console.log("port:", anchor.port);
+// console.log("protocol:", anchor.protocol);
+// console.log("search:", anchor.search);
 
 // //Change location of web page
 // alert(location.href); // shows current URL
 
 // if (confirm("Open Google?")) {
-//     location.href = "https://google.com"; // redirect the browser to another URL using the location object
+//   location.href = "https://google.com"; // redirect the browser to another URL using the location object
 // }
 
 // // Reload the page
 // if (confirm("Reload the page?")) {
-//     location.reload();
+//   location.reload();
 // }
 
 // // Change the URL
@@ -31,7 +31,7 @@ console.log("search:", anchor.search);
 
 // // Change the URL and add a parameter
 // if (confirm("Change the URL and add a parameter?")) {
-//     location.href = "https://www.google.com?q=javascript";
+//   location.href = "https://www.google.com?q=javascript";
 // }
 
 // // // Window Navigator (https://developer.mozilla.org/en-US/docs/Web/API/Window/navigator)
@@ -46,6 +46,8 @@ console.log("search:", anchor.search);
 // alert("You're using a language: " + navigator.language);
 
 // // Get user location
-// navigator.geolocation.getCurrentPosition((position) => {
-//     alert("You're at: " + position.coords.latitude + ", " + position.coords.longitude);
+// navigator.geolocation.getCurrentPosition(position => {
+//   alert(
+//     "You're at: " + position.coords.latitude + ", " + position.coords.longitude
+//   );
 // });
