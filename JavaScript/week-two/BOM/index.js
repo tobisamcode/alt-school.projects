@@ -2,9 +2,14 @@
 
 // location.hash
 var anchor = document.querySelector("a");
-console.log(anchor.hash);
-console.log(anchor.host);
-console.log(anchor.hostname);
+console.log("hash:", anchor.hash);
+console.log("host:", anchor.host);
+console.log("hostname:", anchor.hostname);
+console.log("href:", anchor.href);
+console.log("origin:", anchor.origin);
+console.log("pathname:", anchor.pathname);
+console.log("port:", anchor.port);
+console.log("protocol:", anchor.protocol);
 
 // //Change location of web page
 // alert(location.href); // shows current URL
