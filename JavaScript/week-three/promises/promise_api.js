@@ -1,22 +1,21 @@
-// function getData(url) {
-//     return new Promise((resolve, reject) => {
-//         if (!url) {
-//             reject("No URL provided");
-//         }
+function getData(url) {
+  return new Promise((resolve, reject) => {
+    if (!url) {
+      reject("No URL provided");
+    }
 
-//         const xhr = new XMLHttpRequest();
-//         xhr.open("GET", url);
-//         xhr.send();
-//         xhr.onload = function () {
-//             if (xhr.status === 200) {
-//                 resolve(xhr.responseText);
-//             } else {
-//                 reject(xhr.status);
-//             }
-
-//         };
-//     });
-// }
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", url);
+    xhr.send();
+    xhr.onload = function() {
+      if (xhr.status === 200) {
+        resolve(xhr.responseText);
+      } else {
+        reject(xhr.status);
+      }
+    };
+  });
+}
 
 // Promise.all() is a method that takes an array of promises and returns a new promise.
 // It runs in parallel and returns an array of the results.
@@ -26,12 +25,16 @@ const promises = [
   getData("https://reqres.in/api/unknown")
 ];
 
-// Promise.all(promises)
-//     .then((results) => {
-//         console.log("Success!", results);
-//     }).catch(status => {
-//         console.log(`An error with status code ${status} occurred: `);
-//     });
+Promise.all(promises)
+  //   .then(res => {
+  //     return res.json();
+  //   })
+  .then(results => {
+    console.log("Success!", results);
+  })
+  .catch(status => {
+    console.log(`An error with status code ${status} occurred: `);
+  });
 
 // Promise.race() waits only for the first settled promise and gets its result (or error).
 // Promise.race(promises)
