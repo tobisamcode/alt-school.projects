@@ -1,7 +1,5 @@
 const url = prompt("Enter a URL");
 
-//Async before a function turns it into a promise
-//Await ensures a function is executed before continuing. It works if the function is asynchronous.
 async function getData(url) {
   const response = await fetch(url);
   const result = await response.json();
